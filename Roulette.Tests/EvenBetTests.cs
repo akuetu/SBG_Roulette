@@ -16,7 +16,6 @@ namespace Roulette.Tests
         private const int Cols = 3;
 
         private readonly Mock<IRouletteWheel> _mock = new Mock<IRouletteWheel>();
-        private readonly Mock<IBet> _iBetMock = new Mock<IBet>();
 
         public EvenBetTests()
         {
