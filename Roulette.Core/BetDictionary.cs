@@ -13,6 +13,7 @@ namespace Roulette.Core
             var dictionary = new Dictionary<TypeOfBet, IBet>
             {
                 { TypeOfBet.Zero, new ZeroBet(betModel)},
+                { TypeOfBet.Black, new BlackBet(betModel)},
             };
 
             return dictionary;
