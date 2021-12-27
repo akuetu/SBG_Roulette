@@ -24,6 +24,7 @@ namespace Roulette.Core
                 { TypeOfBet.SecondDozen,new SecondDozenBet(betModel)},
                 { TypeOfBet.ThirdDozen, new ThirdDozenBet(betModel)},
                 { TypeOfBet.FirstColumn,new FirstColumnBet(betModel)},
+                { TypeOfBet.SecondColumn, new SecondColumnBet(betModel)},
 
 
 
