@@ -22,6 +22,8 @@ namespace Roulette.Core
                 { TypeOfBet.DoubleStreet,new DoubleStreetBet(betModel)},
                 
                 { TypeOfBet.FirstDozen,new  FirstDozenBet(betModel)},
+                { TypeOfBet.SecondDozen,new SecondDozenBet(betModel)},
+                
 
                 { TypeOfBet.Split, new SplitBet(betModel)},
             };

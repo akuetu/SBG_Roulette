@@ -29,5 +29,10 @@ namespace Roulette.Core.Base
         {
             return Enumerable.Range(1, 12).ToList();
         }
+
+        public static List<int> SecondDozenList()
+        {
+            return Enumerable.Range(13, 12).ToList();
+        }
     }
 }
