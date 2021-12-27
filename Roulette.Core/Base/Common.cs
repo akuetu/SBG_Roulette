@@ -65,5 +65,18 @@ namespace Roulette.Core.Base
 
             return list;
         }
+
+        public static List<int> ThirdColumnList()
+        {
+            var list = new List<int>();
+            const int thirdColumnUpperLimit = 36;
+
+            for (var i = 3; i <= thirdColumnUpperLimit; i += 3)
+            {
+                list.Add(i);
+            }
+
+            return list;
+        }
     }
 }
