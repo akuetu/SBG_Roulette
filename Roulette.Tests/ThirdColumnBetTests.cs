@@ -45,7 +45,7 @@ namespace Roulette.Tests
 
         [Theory]
         [MemberData(nameof(DataWithInvalidValues))]
-        public void CalculateBet_With_Data_Should_ReturnFalseWhenBetAndSpinAreIncorrect(List<int> bet, int wheelNumber)
+        public void CalculateBet_With_Data_Should_ReturnFalseWhenBetAndSpinAreWrong(List<int> bet, int wheelNumber)
         {
             var betModel = new BetModel()
             {

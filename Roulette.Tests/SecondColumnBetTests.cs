@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Moq;
 using Roulette.Core;
 using Roulette.Core.Base;
@@ -48,7 +45,7 @@ namespace Roulette.Tests
 
         [Theory]
         [MemberData(nameof(DataWithInvalidValues))]
-        public void CalculateBet_With_Data_Should_ReturnFalseWhenBetAndSpinAreIncorrect(List<int> bet, int wheelNumber)
+        public void CalculateBet_With_Data_Should_ReturnExceptionWhenBetAndSpinAreIncorrect(List<int> bet, int wheelNumber)
         {
             var betModel = new BetModel()
             {

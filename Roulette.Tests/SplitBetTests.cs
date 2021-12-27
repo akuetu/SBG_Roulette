@@ -8,7 +8,7 @@ using Xunit;
 
 namespace Roulette.Tests
 {
-    public class CornerBetTests
+    public class SplitBetTests 
     {
         private readonly RouletteBet _rouletteBet;
         private readonly Board _board;
@@ -17,7 +17,7 @@ namespace Roulette.Tests
 
         private readonly Mock<IRouletteWheel> _mock = new Mock<IRouletteWheel>();
 
-        public CornerBetTests()
+        public SplitBetTests()
         {
             _rouletteBet = new RouletteBet();
             _board = new Board(Rows, Cols);
@@ -26,15 +26,15 @@ namespace Roulette.Tests
         [Fact]
         public void CalculateBet_Should_ReturnTrueWhenBetIsCorrect()
         {
-            var bet = new List<int> { 1, 2, 4, 5 };
+            var bet = new List<int> { 1, 2 };
 
-            _mock.Setup(x => x.Spin()).Returns(4);
+            _mock.Setup(x => x.Spin()).Returns(2);
 
             var wheelNumber = _mock.Object.Spin();
 
             var betModel = new BetModel()
             {
-                TypeOfBet = TypeOfBet.Corner,
+                TypeOfBet = TypeOfBet.Split,
                 Bets = bet.ToArray(),
                 WheelNumber = wheelNumber,
                 Board = _board
@@ -49,9 +49,9 @@ namespace Roulette.Tests
 
 
         [Fact]
-        public void CalculateBet_Should_ReturnFalseWhenBetIsWrong()
+        public void CalculateBet_Should_ReturnFalseWheBetIsWrong()
         {
-            var bet = new List<int> { 1, 2, 4, 5 };
+            var bet = new List<int> {2, 3 };
 
             _mock.Setup(x => x.Spin()).Returns(0);
 
@@ -59,7 +59,7 @@ namespace Roulette.Tests
 
             var betModel = new BetModel()
             {
-                TypeOfBet = TypeOfBet.Corner,
+                TypeOfBet = TypeOfBet.Split,
                 Bets = bet.ToArray(),
                 WheelNumber = wheelNumber,
                 Board = _board
@@ -79,7 +79,7 @@ namespace Roulette.Tests
 
             var betModel = new BetModel()
             {
-                TypeOfBet = TypeOfBet.Corner,
+                TypeOfBet = TypeOfBet.Split,
                 Bets = bet.ToArray(),
                 WheelNumber = wheelNumber,
                 Board = _board
@@ -97,7 +97,7 @@ namespace Roulette.Tests
 
             var betModel = new BetModel()
             {
-                TypeOfBet = TypeOfBet.Corner,
+                TypeOfBet = TypeOfBet.Split,
                 Bets = bet.ToArray(),
                 WheelNumber = wheelNumber,
                 Board = _board
@@ -110,21 +110,20 @@ namespace Roulette.Tests
 
         public static IEnumerable<object[]> Data()
         {
-            yield return new object[] { new List<int> { 1, 2, 4, 5 }, 4 };
-            yield return new object[] { new List<int> { 2, 3, 5, 6 }, 6 };
-            yield return new object[] { new List<int> { 10, 11, 13, 14 }, 11 };
-            yield return new object[] { new List<int> { 17, 18, 20, 21 }, 17 };
-            yield return new object[] { new List<int> { 32, 33, 35, 36 }, 36 };
+            yield return new object[] { new List<int> { 10, 11 }, 10 };
+            yield return new object[] { new List<int> { 1, 4 }, 4 };
+            yield return new object[] { new List<int> { 2, 5 }, 5 };
+            yield return new object[] { new List<int> {28, 29 }, 28 };
+            yield return new object[] { new List<int> { 33, 36 }, 36 };
         }
 
         public static IEnumerable<object[]> DataWithInvalidCornerValues()
         {
-            yield return new object[] { new List<int> { 1, 2, 3, 5 }, 4 };
-            yield return new object[] { new List<int> { 2, 1, 5, 6 }, 6 };
-            yield return new object[] { new List<int> { 10, 11, 11, 14 }, 11 };
-            yield return new object[] { new List<int> { 7, 18, 20, 21 }, 17 };
-            yield return new object[] { new List<int> { 0, 33, 35, 36 }, 36 };
+            yield return new object[] { new List<int> { 10, 11 }, 1 };
+            yield return new object[] { new List<int> { 1, 4 }, 34 };
+            yield return new object[] { new List<int> { 2, 5 }, 25 };
+            yield return new object[] { new List<int> { 28, 29 }, 8 };
+            yield return new object[] { new List<int> { 33, 36 }, 6 };
         }
     }
 }
-

@@ -26,7 +26,7 @@ namespace Roulette.Tests
         }
 
         [Fact]
-        public void CalculateBet_Should_ReturnTrue()
+        public void CalculateBet_Should_ReturnTrueWhenBetIsCorrect()
         {
             var bet = new int[] { 0 };
 
@@ -72,7 +72,7 @@ namespace Roulette.Tests
         }
 
         [Fact]
-        public void ValidateZeroBetInput_value_Should_ReturnException()
+        public void ValidateZeroBetInput_value_Should_ReturnExceptionWhenPassWrongArgument()
         {
             var bet = new int[] { 1 };
 
@@ -82,7 +82,7 @@ namespace Roulette.Tests
         }
 
         [Fact]
-        public void ValidateZeroBetInput_Length_Should_ReturnException()
+        public void ValidateZeroBetInput_Length_Should_ReturnExceptionWhenLengthIsWrong()
         {
             var bet = new int[] { 0, 1 };
 

@@ -72,7 +72,7 @@ namespace Roulette.Tests
         }
 
         [Fact]
-        public void CalculateBet_Should_ReturnFalseWhenBetIsWrong()
+        public void CalculateBet_Should_ReturnExceptionWhenBetArgumentIsWrong()
         {
             var bet = new List<int> { 9, 8, 7, 6, 5, 14 };
 
