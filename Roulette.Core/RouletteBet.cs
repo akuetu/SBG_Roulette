@@ -15,7 +15,7 @@ namespace Roulette.Core
                 BetResult = isItWinningBet ? TypeBetResult.Win : TypeBetResult.Loose,
                 Status = isItWinningBet,
                 Balance = balance,
-                Message = string.Empty,
+                Message = isItWinningBet ? "YOU WIN": "YOU LOOSE",
                 WheelNumber = betModel.WheelNumber,
                 TypeOfBet = betModel.TypeOfBet
             };

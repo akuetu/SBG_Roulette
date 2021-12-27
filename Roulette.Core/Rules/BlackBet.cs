@@ -1,8 +1,6 @@
-﻿using System;
-using Roulette.Core.Base;
+﻿using Roulette.Core.Base;
 using Roulette.Core.Interface;
 using Roulette.Core.Model;
-using Roulette.Core.Validations;
 
 namespace Roulette.Core.Rules
 {
