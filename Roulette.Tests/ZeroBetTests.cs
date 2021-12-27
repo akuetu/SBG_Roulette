@@ -92,6 +92,5 @@ namespace Roulette.Tests
 
         }
 
-
     }
 }
