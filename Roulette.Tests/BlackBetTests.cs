@@ -56,9 +56,9 @@ namespace Roulette.Tests
                 Board = _board
             };
 
-            var isItWinningBet = _rouletteBet.CalculateBet(betModel, new Account(500));
+            var result = _rouletteBet.CalculateBet(betModel, new Account(500));
 
-            Assert.Equal(expected, isItWinningBet.Status);
+            Assert.Equal(expected, result.Status);
         }
 
 
@@ -98,9 +98,9 @@ namespace Roulette.Tests
                 Board = _board
             };
 
-            var isItWinningBet = _rouletteBet.CalculateBet(betModel, new Account(500));
+            var result = _rouletteBet.CalculateBet(betModel, new Account(500));
 
-            Assert.Equal(expected, isItWinningBet.Status);
+            Assert.Equal(expected, result.Status);
         }
 
 
@@ -128,9 +128,9 @@ namespace Roulette.Tests
                 Board = _board
             };
 
-            var isItWinningBet = _rouletteBet.CalculateBet(betModel, new Account(500));
+            var result = _rouletteBet.CalculateBet(betModel, new Account(500));
 
-            Assert.Equal(expected, isItWinningBet.Status);
+            Assert.Equal(expected, result.Status);
         }
     }
 }

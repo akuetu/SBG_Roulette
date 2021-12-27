@@ -1,4 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using Roulette.Core.Base;
 using Roulette.Core.Interface;
 using Roulette.Core.Model;
@@ -6,18 +10,22 @@ using Roulette.Core.Validations;
 
 namespace Roulette.Core.Rules
 {
-    public class BlackBet : IBet
+    public class RedBet : IBet
     {
         private readonly BetModel _betModel;
 
-        public BlackBet(BetModel betModel)
+        public RedBet(BetModel betModel)
         {
             _betModel = betModel;
         }
+
+
         public bool CalculateBet()
         {
-            var blackPieces = Common.BlackPieces();
-            return blackPieces.Contains(_betModel.WheelNumber);
+           
+            var redPieces = Common.RedPieces();
+            return redPieces.Contains(_betModel.WheelNumber);
         }
+
     }
 }

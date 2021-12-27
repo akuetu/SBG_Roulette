@@ -14,6 +14,7 @@ namespace Roulette.Core
             {
                 { TypeOfBet.Zero, new ZeroBet(betModel)},
                 { TypeOfBet.Black, new BlackBet(betModel)},
+                { TypeOfBet.Red,new RedBet(betModel)},
             };
 
             return dictionary;
