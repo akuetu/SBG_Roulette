@@ -19,7 +19,7 @@ namespace Roulette.Core
                 { TypeOfBet.Odd, new  OddBet(betModel)},
                 { TypeOfBet.StraightUp, new  StraightUpBet(betModel)},
                 { TypeOfBet.Street, new StreetBet(betModel)},
-
+                { TypeOfBet.DoubleStreet,new DoubleStreetBet(betModel)},
             };
 
             return dictionary;
