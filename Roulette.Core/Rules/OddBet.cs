@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Roulette.Core.Interface;
+﻿using Roulette.Core.Interface;
 using Roulette.Core.Model;
 
 namespace Roulette.Core.Rules
