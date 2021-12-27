@@ -27,9 +27,6 @@ namespace Roulette.Core
                 { TypeOfBet.SecondColumn, new SecondColumnBet(betModel)},
                 { TypeOfBet.ThirdColumn,new ThirdColumnBet(betModel)},
                 { TypeOfBet.Corner, new CornerBet(betModel)},
-
-
-
                 { TypeOfBet.Split, new SplitBet(betModel)},
             };
 

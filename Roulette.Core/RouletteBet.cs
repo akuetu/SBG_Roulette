@@ -1,4 +1,5 @@
-﻿using Roulette.Core.Base;
+﻿using System;
+using Roulette.Core.Base;
 using Roulette.Core.Model;
 
 namespace Roulette.Core
@@ -15,7 +16,7 @@ namespace Roulette.Core
                 BetResult = isItWinningBet ? TypeBetResult.Win : TypeBetResult.Loose,
                 Status = isItWinningBet,
                 Balance = balance,
-                Message = isItWinningBet ? "YOU WIN": "YOU LOOSE",
+                Message = isItWinningBet ? "YOU WIN" : "YOU LOOSE",
                 WheelNumber = betModel.WheelNumber,
                 TypeOfBet = betModel.TypeOfBet
             };
@@ -24,7 +25,11 @@ namespace Roulette.Core
         private static bool CalculateBet(BetModel betModel)
         {
             var dictionary = BetDictionary.CreateDictionary(betModel);
-            var isItWinningBet = dictionary.ContainsKey(betModel.TypeOfBet) && dictionary[betModel.TypeOfBet].CalculateBet();
+
+            if (!dictionary.ContainsKey(betModel.TypeOfBet)) throw new ArgumentException("Invalid Type of Option.");
+
+            var isItWinningBet = dictionary[betModel.TypeOfBet].CalculateBet();
+
             return isItWinningBet;
         }
 

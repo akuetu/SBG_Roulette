@@ -9,26 +9,18 @@ namespace Roulette.API.Controllers
     [ApiController]
     public class RouletteController : ControllerBase
     {
-        //private readonly IRouletteService _rouletteService;
-        private  RouletteService _rouletteService;
-
-        public RouletteController()
+        private readonly IRouletteService _rouletteService;
+        
+        public RouletteController(IRouletteService rouletteService)
         {
-           
+            _rouletteService = rouletteService;
         }
 
-        [HttpGet("ping")]
-        public IActionResult GetPing()
-        {
-            return Ok("Pong");
-        }
-
+        
         [HttpPost("bet")]
         public IActionResult PostBet([FromBody] RouletteBetModel model)
         {
-            _rouletteService = new RouletteService();
-            //validate model
-            //BetModel betModel, Account account
+            if (!ModelState.IsValid) return BadRequest("Please submit required fields.");
 
             var response =  _rouletteService.CalculateBet(model.TypeOfBet, model.Bets, model.Account);
 
