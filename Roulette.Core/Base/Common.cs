@@ -34,5 +34,23 @@ namespace Roulette.Core.Base
         {
             return Enumerable.Range(13, 12).ToList();
         }
+
+        public static List<int> ThirdDozenList()
+        {
+            return Enumerable.Range(25, 12).ToList();
+        }
+
+        public static List<int> FirstColumnList()
+        {
+            var list = new List<int>();
+            const int firstColumnUpperLimit = 34;
+
+            for (var i = 1; i <= firstColumnUpperLimit; i += 3)
+            {
+                list.Add(i);
+            }
+
+            return list;
+        }
     }
 }

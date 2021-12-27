@@ -19,11 +19,13 @@ namespace Roulette.Core
                 { TypeOfBet.Odd, new  OddBet(betModel)},
                 { TypeOfBet.StraightUp, new  StraightUpBet(betModel)},
                 { TypeOfBet.Street, new StreetBet(betModel)},
-                { TypeOfBet.DoubleStreet,new DoubleStreetBet(betModel)},
-                
+                { TypeOfBet.DoubleStreet,new DoubleStreetBet(betModel)},                
                 { TypeOfBet.FirstDozen,new  FirstDozenBet(betModel)},
                 { TypeOfBet.SecondDozen,new SecondDozenBet(betModel)},
-                
+                { TypeOfBet.ThirdDozen, new ThirdDozenBet(betModel)},
+                { TypeOfBet.FirstColumn,new FirstColumnBet(betModel)},
+
+
 
                 { TypeOfBet.Split, new SplitBet(betModel)},
             };
