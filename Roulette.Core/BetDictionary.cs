@@ -16,6 +16,7 @@ namespace Roulette.Core
                 { TypeOfBet.Black, new BlackBet(betModel)},
                 { TypeOfBet.Red,new RedBet(betModel)},
                 { TypeOfBet.Even, new  EvenBet(betModel)},
+                { TypeOfBet.Odd, new  OddBet(betModel)},
             };
 
             return dictionary;
