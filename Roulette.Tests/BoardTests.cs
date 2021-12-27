@@ -52,8 +52,7 @@ namespace Roulette.Tests
             Assert.Equal(redPieces.OrderBy(e => e), expectedRedPieces.OrderBy(e => e));
 
         }
-
-
+        
         [Fact]
         public void Validate_BlackColor_ReturnsOnlyBlackColorPieces()
         {
