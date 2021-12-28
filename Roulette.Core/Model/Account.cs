@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace Roulette.Core.Model
@@ -8,22 +9,32 @@ namespace Roulette.Core.Model
     /// </summary>
     public class Account
     {
-        public static List<decimal> DbBalance = new List<decimal>();
+        private static Object thisLock = new Object();
+        private static List<decimal> DbBalance = new List<decimal>();
 
 
         public void AddMoney(decimal quantity)
         {
-            DbBalance.Add(quantity);
+            lock (thisLock)
+            {
+                DbBalance.Add(quantity);
+            }
         }
 
         public void RemoveMoney(decimal quantity)
         {
-            DbBalance.Add(-quantity);
+            lock (thisLock)
+            {
+                DbBalance.Add(-quantity);
+            }
         }
 
         public decimal Balance()
         {
-            return DbBalance.Sum();
+            lock (thisLock)
+            {
+                return DbBalance.Sum();
+            }
         }
     }
 }
