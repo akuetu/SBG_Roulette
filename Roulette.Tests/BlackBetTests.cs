@@ -16,6 +16,7 @@ namespace Roulette.Tests
 
         private readonly Mock<IRouletteWheel> _mock = new Mock<IRouletteWheel>();
 
+        
         public BlackBetTests()
         {
             _rouletteBet = new RouletteBet();
@@ -55,8 +56,8 @@ namespace Roulette.Tests
                 WheelNumber = wheelNumber,
                 Board = _board
             };
-
-            var result = _rouletteBet.CalculateBet(betModel, new Account(500));
+            
+            var result = _rouletteBet.CalculateBet(betModel, new Account());
 
             Assert.Equal(expected, result.Status);
         }
@@ -98,7 +99,7 @@ namespace Roulette.Tests
                 Board = _board
             };
 
-            var result = _rouletteBet.CalculateBet(betModel, new Account(500));
+            var result = _rouletteBet.CalculateBet(betModel, new Account());
 
             Assert.Equal(expected, result.Status);
         }
@@ -127,8 +128,8 @@ namespace Roulette.Tests
                 WheelNumber = wheelNumber,
                 Board = _board
             };
-
-            var result = _rouletteBet.CalculateBet(betModel, new Account(500));
+            
+            var result = _rouletteBet.CalculateBet(betModel, new Account());
 
             Assert.Equal(expected, result.Status);
         }

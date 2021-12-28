@@ -17,7 +17,6 @@ namespace Roulette.Tests
         private const int Cols = 3;
 
         private readonly Mock<IRouletteWheel> _mock = new Mock<IRouletteWheel>();
-        private readonly Mock<IBet> _iBetMock = new Mock<IBet>();
 
         public DoubleStreetBetTests()
         {
@@ -42,7 +41,8 @@ namespace Roulette.Tests
                 Board = _board
             };
 
-            var result = _rouletteBet.CalculateBet(betModel, new Account(500));
+           
+            var result = _rouletteBet.CalculateBet(betModel, new Account());
 
             Assert.True(result.Status);
 
@@ -66,7 +66,8 @@ namespace Roulette.Tests
                 Board = _board
             };
 
-            var result = _rouletteBet.CalculateBet(betModel, new Account(500));
+            
+            var result = _rouletteBet.CalculateBet(betModel, new Account());
 
             Assert.False(result.Status);
         }
@@ -88,7 +89,7 @@ namespace Roulette.Tests
                 Board = _board
             };
 
-            var exception = Assert.Throws<RowInvalidException>(() => _rouletteBet.CalculateBet(betModel, new Account(500)));
+            var exception = Assert.Throws<RowInvalidException>(() => _rouletteBet.CalculateBet(betModel, new Account()));
 
             Assert.Equal("Invalid row values.", exception.Message);
 
@@ -107,7 +108,7 @@ namespace Roulette.Tests
                 Board = _board
             };
 
-            var result = _rouletteBet.CalculateBet(betModel, new Account(500));
+            var result = _rouletteBet.CalculateBet(betModel, new Account());
 
             Assert.True(result.Status);
         }
@@ -124,7 +125,7 @@ namespace Roulette.Tests
                 Board = _board
             };
 
-            var result = _rouletteBet.CalculateBet(betModel, new Account(500));
+            var result = _rouletteBet.CalculateBet(betModel, new Account());
 
             Assert.False(result.Status);
         }

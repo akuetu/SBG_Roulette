@@ -40,7 +40,7 @@ namespace Roulette.Tests
                 Board = _board
             };
 
-            var result = _rouletteBet.CalculateBet(betModel, new Account(500));
+            var result = _rouletteBet.CalculateBet(betModel, new Account());
 
             Assert.True(result.Status);
 
@@ -59,7 +59,7 @@ namespace Roulette.Tests
                 Board = _board
             };
 
-            var result = _rouletteBet.CalculateBet(betModel, new Account(500));
+            var result = _rouletteBet.CalculateBet(betModel, new Account());
 
             Assert.True(result.Status);
         }
@@ -76,7 +76,7 @@ namespace Roulette.Tests
                 Board = _board
             };
 
-            var result = _rouletteBet.CalculateBet(betModel, new Account(500));
+            var result = _rouletteBet.CalculateBet(betModel, new Account());
 
             Assert.False(result.Status);
         }

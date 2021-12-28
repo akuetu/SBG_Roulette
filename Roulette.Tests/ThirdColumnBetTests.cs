@@ -16,8 +16,6 @@ namespace Roulette.Tests
         private const int Rows = 12;
         private const int Cols = 3;
 
-        private readonly Mock<IBet> _iBetMock = new Mock<IBet>();
-
         public ThirdColumnBetTests()
         {
             _rouletteBet = new RouletteBet();
@@ -37,7 +35,7 @@ namespace Roulette.Tests
                 Board = _board
             };
 
-            var result = _rouletteBet.CalculateBet(betModel, new Account(500));
+            var result = _rouletteBet.CalculateBet(betModel, new Account());
 
             Assert.True(result.Status);
         }
@@ -55,7 +53,7 @@ namespace Roulette.Tests
                 Board = _board
             };
 
-            var exception = Assert.Throws<ArgumentException>(() => _rouletteBet.CalculateBet(betModel, new Account(500)));
+            var exception = Assert.Throws<ArgumentException>(() => _rouletteBet.CalculateBet(betModel, new Account()));
 
             Assert.Equal("Invalid Argument.", exception.Message);
         }

@@ -42,7 +42,7 @@ namespace Roulette.Tests
 
             var rouletteBet = new RouletteBet();
 
-            var exception = Assert.Throws<ArgumentException>(() => rouletteBet.CalculateBet(betModel, new Account(500)));
+            var exception = Assert.Throws<ArgumentException>(() => rouletteBet.CalculateBet(betModel, new Account()));
 
             Assert.Equal("Invalid Type of Option.", exception.Message);
 

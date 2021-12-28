@@ -40,7 +40,7 @@ namespace Roulette.Tests
                 Board = _board
             };
 
-            var result = _rouletteBet.CalculateBet(betModel, new Account(500));
+            var result = _rouletteBet.CalculateBet(betModel, new Account());
 
             Assert.True(result.Status);
 
@@ -50,7 +50,37 @@ namespace Roulette.Tests
 
 
         [Theory]
+        [InlineData(2, false)]
+        [InlineData(4, false)]
+        [InlineData(6, false)]
+        [InlineData(8, false)]
+        [InlineData(10, false)]
+        [InlineData(16, false)]
+        [InlineData(20, false)]
+        [InlineData(24, false)]
+        [InlineData(26, false)]
+        [InlineData(28, false)]
+        [InlineData(30, false)]
+        [InlineData(34, false)]
+        [InlineData(32, false)]
+        [InlineData(36, false)]
+        public void CalculateBet_Should_ReturnInlineFalseWhenNumberIsNotOdd(int wheelNumber, bool expected)
+        {
+            var betModel = new BetModel()
+            {
+                TypeOfBet = TypeOfBet.Odd,
+                Bets = null,
+                WheelNumber = wheelNumber,
+                Board = _board
+            };
 
+            var result = _rouletteBet.CalculateBet(betModel, new Account());
+
+            Assert.Equal(expected, result.Status);
+        }
+
+
+        [Theory]
         [InlineData(1, true)]
         [InlineData(3, true)]
         [InlineData(5, true)]
@@ -67,21 +97,7 @@ namespace Roulette.Tests
         [InlineData(27, true)]
         [InlineData(31, true)]
         [InlineData(35, true)]
-        [InlineData(2, false)]
-        [InlineData(4, false)]
-        [InlineData(6, false)]
-        [InlineData(8, false)]
-        [InlineData(10, false)]
-        [InlineData(16, false)]
-        [InlineData(20, false)]
-        [InlineData(24, false)]
-        [InlineData(26, false)]
-        [InlineData(28, false)]
-        [InlineData(30, false)]
-        [InlineData(34, false)]
-        [InlineData(32, false)]
-        [InlineData(36, false)]
-        public void CalculateBet_Should_ReturnInlineResult(int wheelNumber, bool expected)
+        public void CalculateBet_Should_ReturnInlineTrueWhenNumerIsOdd(int wheelNumber, bool expected)
         {
             var betModel = new BetModel()
             {
@@ -91,7 +107,7 @@ namespace Roulette.Tests
                 Board = _board
             };
 
-            var result = _rouletteBet.CalculateBet(betModel, new Account(500));
+            var result = _rouletteBet.CalculateBet(betModel, new Account());
 
             Assert.Equal(expected, result.Status);
         }
