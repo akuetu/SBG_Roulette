@@ -16,8 +16,14 @@ dotnet build
 
 dotnet run
 
+# How to run all tests?
+Go to  "X:\SBG_Roulette\Roulette.Tests" directory
 
-# How to test bets?
+
+dotnet test
+
+
+# How to play the game?
 Please see the Postman endpoint json file. (In the project's Postman folder).
 
 # No https:
