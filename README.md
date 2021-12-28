@@ -9,7 +9,7 @@
 
 # To compile and run the program in:
 
-"C:\Roulette\SBG\Roulette.API":
+"X:\Roulette\SBG\Roulette.API":
 
 dotnet build
 
