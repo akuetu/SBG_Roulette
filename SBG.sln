@@ -9,11 +9,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Roulette.Core", "Roulette.C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Roulette.API", "Roulette.API\Roulette.API.csproj", "{B6CF2BBB-48D1-47E8-B639-5D555E3768A7}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Postman", "Postman", "{8802FE4B-46A5-4ADB-B170-1B9ECE8C12B9}"
-	ProjectSection(SolutionItems) = preProject
-		..\..\..\Users\emateus\Downloads\Roulette_Postman\SBG.postman_collection.json = ..\..\..\Users\emateus\Downloads\Roulette_Postman\SBG.postman_collection.json
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

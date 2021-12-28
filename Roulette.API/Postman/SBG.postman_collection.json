@@ -1,0 +1,579 @@
+{
+	"info": {
+		"_postman_id": "9155fb5e-3332-4f83-bf6f-e822478c448b",    
+		"name": "SBG",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Corner Bet",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"typeOfBet\": 4, //Corner Bet\r\n  \"bets\": [\r\n   10,11,13,14\r\n  ],\r\n  \"account\": {\r\n    \"userAccount\": {\r\n      \"id\": 1,\r\n      \"name\": \"Emmanuel\"\r\n    }\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44397/api/Roulette/bet",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44397",
+					"path": [
+						"api",
+						"Roulette",
+						"bet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Street Bet",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"typeOfBet\": 3, //Street Bet\r\n  \"bets\": [\r\n   31,32,33\r\n  ],\r\n  \"account\": {\r\n    \"userAccount\": {\r\n      \"id\": 1,\r\n      \"name\": \"Emanuel\"\r\n    }\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44397/api/Roulette/bet",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44397",
+					"path": [
+						"api",
+						"Roulette",
+						"bet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Split Bet",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"typeOfBet\": 2, //Split Bet\r\n  \"bets\": [\r\n  23,26\r\n  ],\r\n  \"account\": {\r\n    \"userAccount\": {\r\n      \"id\": 1,\r\n      \"name\": \"Emanuel\"\r\n    }\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44397/api/Roulette/bet",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44397",
+					"path": [
+						"api",
+						"Roulette",
+						"bet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "StraightUp Bet",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"typeOfBet\": 1, //StraightUp Bet\r\n  \"bets\": [\r\n  23\r\n  ],\r\n  \"account\": {\r\n    \"userAccount\": {\r\n      \"id\": 1,\r\n      \"name\": \"Emanuel\"\r\n    }\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44397/api/Roulette/bet",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44397",
+					"path": [
+						"api",
+						"Roulette",
+						"bet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Money",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "500\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44397/api/Roulette/addmoney",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44397",
+					"path": [
+						"api",
+						"Roulette",
+						"addmoney"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DoubleStreet Bet",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"typeOfBet\": 6, //DoubleStreet Bet\r\n  \"bets\": [\r\n  4,5,6,7,8,9\r\n  ],\r\n  \"account\": {\r\n    \"userAccount\": {\r\n      \"id\": 1,\r\n      \"name\": \"Emanuel\"\r\n    }\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44397/api/Roulette/bet",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44397",
+					"path": [
+						"api",
+						"Roulette",
+						"bet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FirstColumn Bet",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"typeOfBet\": 7, //FirstColumn Bet\r\n  \"bets\": [\r\n  1,4,7,10,13,16,19,22,25,28,31,34\r\n  ],\r\n  \"account\": {\r\n    \"userAccount\": {\r\n      \"id\": 1,\r\n      \"name\": \"Emanuel\"\r\n    }\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44397/api/Roulette/bet",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44397",
+					"path": [
+						"api",
+						"Roulette",
+						"bet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SecondColumn Bet ",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"typeOfBet\": 8, //SecondColumn Bet\r\n  \"bets\": [\r\n  2,5,8,11,14,17,20,23,26,29,32,35\r\n  ],\r\n  \"account\": {\r\n    \"userAccount\": {\r\n      \"id\": 1,\r\n      \"name\": \"Emanuel\"\r\n    }\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44397/api/Roulette/bet",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44397",
+					"path": [
+						"api",
+						"Roulette",
+						"bet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ThirdColumn Bet",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"typeOfBet\": 9, //ThirdColumn Bet\r\n  \"bets\": [\r\n  3,6,9,12,15,18,21,24,27,30,33,36\r\n  ],\r\n  \"account\": {\r\n    \"userAccount\": {\r\n      \"id\": 1,\r\n      \"name\": \"Emanuel\"\r\n    }\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44397/api/Roulette/bet",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44397",
+					"path": [
+						"api",
+						"Roulette",
+						"bet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FirstDozen Bet",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"typeOfBet\": 10, //FirstDozen Bet\r\n  \"bets\": [\r\n  1,2,3,4,5,6,7,8,9,10,11,12\r\n  ],\r\n  \"account\": {\r\n    \"userAccount\": {\r\n      \"id\": 1,\r\n      \"name\": \"Emanuel\"\r\n    }\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44397/api/Roulette/bet",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44397",
+					"path": [
+						"api",
+						"Roulette",
+						"bet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SecondDozen Bet",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"typeOfBet\": 11, //SecondDozen Bet\r\n  \"bets\": [\r\n  13,14,15,16,17,18,19,20,21,22,23,24\r\n  ],\r\n  \"account\": {\r\n    \"userAccount\": {\r\n      \"id\": 1,\r\n      \"name\": \"Emanuel\"\r\n    }\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44397/api/Roulette/bet",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44397",
+					"path": [
+						"api",
+						"Roulette",
+						"bet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ThirdDozen Bet",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"typeOfBet\": 12, //ThirdDozen Bet\r\n  \"bets\": [\r\n  25,26,27,28,29,30,31,32,33,34,35,36\r\n  ],\r\n  \"account\": {\r\n    \"userAccount\": {\r\n      \"id\": 1,\r\n      \"name\": \"Emanuel\"\r\n    }\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44397/api/Roulette/bet",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44397",
+					"path": [
+						"api",
+						"Roulette",
+						"bet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Odd Bet",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"typeOfBet\": 13, //Odd Bet\r\n  \"bets\": [\r\n   \r\n  ],\r\n  \"account\": {\r\n    \"userAccount\": {\r\n      \"id\": 1,\r\n      \"name\": \"Emanuel\"\r\n    }\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44397/api/Roulette/bet",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44397",
+					"path": [
+						"api",
+						"Roulette",
+						"bet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Even Bet",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"typeOfBet\": 14, //Even Bet\r\n  \"bets\": [\r\n   \r\n  ],\r\n  \"account\": {\r\n    \"userAccount\": {\r\n      \"id\": 1,\r\n      \"name\": \"Emanuel\"\r\n    }\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44397/api/Roulette/bet",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44397",
+					"path": [
+						"api",
+						"Roulette",
+						"bet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Red Bet",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"typeOfBet\": 15, //Red Bet\r\n  \"bets\": [\r\n      \r\n  ],\r\n  \"account\": {\r\n    \"userAccount\": {\r\n      \"id\": 1,\r\n      \"name\": \"Emanuel\"\r\n    }\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44397/api/Roulette/bet",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44397",
+					"path": [
+						"api",
+						"Roulette",
+						"bet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Black Bet",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"typeOfBet\": 16, //Black Bet\r\n  \"bets\": [\r\n      \r\n  ],\r\n  \"account\": {\r\n    \"userAccount\": {\r\n      \"id\": 1,\r\n      \"name\": \"Emanuel\"\r\n    }\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44397/api/Roulette/bet",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44397",
+					"path": [
+						"api",
+						"Roulette",
+						"bet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Zero Bet",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"typeOfBet\": 0, //Zero Bet\r\n  \"bets\": [\r\n  0\r\n  ],\r\n  \"account\": {\r\n    \"userAccount\": {\r\n      \"id\": 1,\r\n      \"name\": \"Emanuel\"\r\n    }\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44397/api/Roulette/bet",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44397",
+					"path": [
+						"api",
+						"Roulette",
+						"bet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "No Https Zero Bet",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"typeOfBet\": 0, //Zero Bet\r\n  \"bets\": [\r\n  0\r\n  ],\r\n  \"account\": {\r\n    \"userAccount\": {\r\n      \"id\": 1,\r\n      \"name\": \"Emanuel\"\r\n    }\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5001/api/Roulette/bet",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"Roulette",
+						"bet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "No Https Add Money",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n    500\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5001/api/Roulette/addmoney",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"Roulette",
+						"addmoney"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
