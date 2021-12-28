@@ -10,7 +10,11 @@ namespace Roulette.Core
         public BetResponse CalculateBet(BetModel betModel, Account account)
         {
             var isItWinningBet = CalculateBet(betModel);
+
+            FinancialManagement(account, isItWinningBet);
+
             var balance = account.Balance();
+
             return new BetResponse
             {
                 BetResult = isItWinningBet ? TypeBetResult.Win : TypeBetResult.Loose,
@@ -31,6 +35,18 @@ namespace Roulette.Core
             var isItWinningBet = dictionary[betModel.TypeOfBet].CalculateBet();
 
             return isItWinningBet;
+        }
+
+        private static void FinancialManagement(Account account, bool isItWinningBet)
+        {
+            if (isItWinningBet)
+            {
+                account.AddMoney(10);
+            }
+            else
+            {
+                account.RemoveMoney(10);
+            }
         }
 
     }

@@ -1,29 +1,29 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Roulette.Core.Model
 {
+    /// <summary>
+    /// Auxiliary class that simulates player balance management
+    /// </summary>
     public class Account
     {
-        private decimal _balance = 0;
-        public UserAccount UserAccount { get; set; }
+        public static List<decimal> DbBalance = new List<decimal>();
 
-        public Account(decimal balance)
+
+        public void AddMoney(decimal quantity)
         {
-            _balance = balance;
+            DbBalance.Add(quantity);
         }
 
-        public decimal AddPrizeValue(decimal prizeValue)
+        public void RemoveMoney(decimal quantity)
         {
-            return _balance += prizeValue;
+            DbBalance.Add(-quantity);
         }
 
         public decimal Balance()
         {
-            return _balance;
+            return DbBalance.Sum();
         }
     }
 }
