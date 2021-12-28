@@ -7,7 +7,9 @@
 	You must have a .NET Core SDK installed.
 	https://dotnet.microsoft.com/en-us/download/dotnet/5.0
 
-# To compile and run the program in "X:\Roulette\SBG\Roulette.API":
+# To compile and run the program in:
+
+"X:\Roulette\SBG\Roulette.API":
 
 dotnet build
 
