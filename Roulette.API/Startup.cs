@@ -5,7 +5,6 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using Roulette.API.Services;
-using Roulette.Core;
 
 namespace Roulette.API
 {
@@ -43,7 +42,8 @@ namespace Roulette.API
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Roulette.API v1"));
             }
 
-            app.UseHttpsRedirection();
+            //Disable https
+            //app.UseHttpsRedirection();
 
             app.UseRouting();
 

@@ -17,8 +17,6 @@ namespace Roulette.Core.Rules
 
         public bool CalculateBet()
         {
-            const int splitSize = 3;
-
             var isValidColumn = SplitBetValidation.ValidateGridColumns(_betModel.Bets, _betModel.Board);
 
             if (isValidColumn) return BaseBet.IsCorrectBet(_betModel.WheelNumber, _betModel.Bets);

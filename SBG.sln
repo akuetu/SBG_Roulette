@@ -3,11 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roulette.Tests", "Roulette.Tests\Roulette.Tests.csproj", "{94803890-5D2A-4FA1-A9B9-42E11AB73915}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Roulette.Tests", "Roulette.Tests\Roulette.Tests.csproj", "{94803890-5D2A-4FA1-A9B9-42E11AB73915}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roulette.Core", "Roulette.Core\Roulette.Core.csproj", "{C6645567-412F-45FA-8477-0EF922E9E856}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Roulette.Core", "Roulette.Core\Roulette.Core.csproj", "{C6645567-412F-45FA-8477-0EF922E9E856}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roulette.API", "Roulette.API\Roulette.API.csproj", "{B6CF2BBB-48D1-47E8-B639-5D555E3768A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Roulette.API", "Roulette.API\Roulette.API.csproj", "{B6CF2BBB-48D1-47E8-B639-5D555E3768A7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Postman", "Postman", "{8802FE4B-46A5-4ADB-B170-1B9ECE8C12B9}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Users\emateus\Downloads\Roulette_Postman\SBG.postman_collection.json = ..\..\..\Users\emateus\Downloads\Roulette_Postman\SBG.postman_collection.json
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
