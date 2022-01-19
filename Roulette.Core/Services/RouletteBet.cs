@@ -22,7 +22,8 @@ namespace Roulette.Service.Services
                 Balance = balance,
                 Message = isItWinningBet ? "YOU WIN" : "YOU LOOSE",
                 WheelNumber = betModel.WheelNumber,
-                TypeOfBet = betModel.TypeOfBet
+                TypeOfBet = betModel.TypeOfBet,
+                UserAccount = account.UserAccount
             };
         }
 

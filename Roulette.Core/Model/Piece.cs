@@ -1,4 +1,5 @@
-﻿using Roulette.Service.Shared;
+﻿
+using Roulette.Service.Shared;
 
 namespace Roulette.Service.Model
 {

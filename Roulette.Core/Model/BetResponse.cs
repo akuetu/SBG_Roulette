@@ -2,7 +2,7 @@
 
 namespace Roulette.Service.Model
 {
-   public class BetResponse
+    public class BetResponse
     {
         public TypeBetResult BetResult { get; set; }
 
@@ -15,5 +15,7 @@ namespace Roulette.Service.Model
         public int WheelNumber { get; set; }
 
         public TypeOfBet TypeOfBet { get; set; }
+
+        public UserAccount UserAccount { get; set; }
     }
 }

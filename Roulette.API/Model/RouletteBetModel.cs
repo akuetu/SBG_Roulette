@@ -1,6 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using Roulette.Service.Base;
-using Roulette.Service.Model;
+using Roulette.Service.Services;
 using Roulette.Service.Shared;
 
 namespace Roulette.API.Model
