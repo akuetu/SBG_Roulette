@@ -1,4 +1,4 @@
-﻿namespace Roulette.Core.Base
+﻿namespace Roulette.Service.Shared
 {
 
     public enum PieceColor

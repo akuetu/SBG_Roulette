@@ -2,7 +2,9 @@
 using Roulette.Core.Base;
 using Roulette.Core.Interface;
 using Roulette.Core.Rules;
+using Roulette.Service.Base;
 using Roulette.Service.Model;
+using Roulette.Service.Shared;
 
 namespace Roulette.Service
 {

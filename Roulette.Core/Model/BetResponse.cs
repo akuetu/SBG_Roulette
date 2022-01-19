@@ -1,4 +1,6 @@
 ﻿using Roulette.Core.Base;
+using Roulette.Service.Base;
+using Roulette.Service.Shared;
 
 namespace Roulette.Service.Model
 {

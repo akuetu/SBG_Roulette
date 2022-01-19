@@ -1,4 +1,7 @@
-﻿namespace Roulette.Core.Base
+﻿using Roulette.Core.Base;
+using Roulette.Service.Shared;
+
+namespace Roulette.Service.Base
 {
     public class Board
     {

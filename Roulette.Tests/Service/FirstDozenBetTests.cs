@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using Roulette.Core;
 using Roulette.Core.Base;
 using Roulette.Service;
+using Roulette.Service.Base;
 using Roulette.Service.Model;
+using Roulette.Service.Shared;
 using Xunit;
 
 namespace Roulette.Tests
