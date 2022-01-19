@@ -24,7 +24,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Postman", "Postman", "{829FE8DF-EA36-455F-8473-32DE440165F4}"
 	ProjectSection(SolutionItems) = preProject
 		Roulette.API\Postman\SBG.postman_collection.json = Roulette.API\Postman\SBG.postman_collection.json
-		..\..\..\..\DEV\Roulette\SBG\Roulette.API\Postman\SBG.postman_collection.json = ..\..\..\..\DEV\Roulette\SBG\Roulette.API\Postman\SBG.postman_collection.json
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Logging", "Logging", "{A14E8595-028E-48A9-A61E-A0FEC72B9AC6}"
