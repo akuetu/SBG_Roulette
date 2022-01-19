@@ -33,6 +33,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Roulette.API\Roulette.API.csproj" />
     <ProjectReference Include="..\Roulette.Core\Roulette.Service.csproj" />
   </ItemGroup>
 

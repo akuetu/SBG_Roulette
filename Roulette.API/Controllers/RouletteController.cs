@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Net;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Roulette.API.Model;
 using Roulette.Service.Exceptions;
@@ -12,21 +14,19 @@ namespace Roulette.API.Controllers
     public class RouletteController : ControllerBase
     {
         private readonly IRouletteService _rouletteService;
-        private readonly IAccountService _iAccountService;
+        private readonly IAccountService _accountService;
 
-        public RouletteController(IRouletteService rouletteService, IAccountService iAccountService)
+        public RouletteController(IRouletteService rouletteService, IAccountService accountService)
         {
             _rouletteService = rouletteService;
-            _iAccountService = iAccountService;
+            _accountService = accountService;
         }
 
         [HttpPost("addmoney")]
         public IActionResult PostMoney([FromBody] decimal value)
         {
-           
-            _iAccountService.AddMoney(value);
-
-            return Ok(new {Balance = _iAccountService.Balance()});
+            _accountService.AddMoney(value);
+            return Ok( new {Balance = _accountService.Balance()});
         }
 
         [HttpPost("bet")]
