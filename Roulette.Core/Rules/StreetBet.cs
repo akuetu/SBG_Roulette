@@ -4,7 +4,7 @@ using Roulette.Service.Exceptions;
 using Roulette.Service.Interface;
 using Roulette.Service.Model;
 
-namespace Roulette.Core.Rules
+namespace Roulette.Service.Rules
 {
     public class StreetBet : IBet
     {

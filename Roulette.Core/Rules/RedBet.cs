@@ -1,15 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Roulette.Core.Validations;
-using Roulette.Service.Base;
-using Roulette.Service.Interface;
+﻿using Roulette.Service.Interface;
 using Roulette.Service.Model;
 using Roulette.Service.Shared;
 
-namespace Roulette.Core.Rules
+namespace Roulette.Service.Rules
 {
     public class RedBet : IBet
     {

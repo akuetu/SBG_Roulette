@@ -3,7 +3,7 @@ using Roulette.Service.Base;
 using Roulette.Service.Interface;
 using Roulette.Service.Model;
 
-namespace Roulette.Core.Rules
+namespace Roulette.Service.Rules
 {
     public class CornerBet : IBet
     {
