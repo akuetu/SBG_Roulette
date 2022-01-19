@@ -1,5 +1,4 @@
-﻿using Roulette.Core.Interface;
-using Roulette.Core.Validations;
+﻿using Roulette.Core.Validations;
 using Roulette.Service.Base;
 using Roulette.Service.Exceptions;
 using Roulette.Service.Interface;

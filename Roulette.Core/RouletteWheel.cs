@@ -1,5 +1,5 @@
 ﻿using System;
-using Roulette.Core.Interface;
+using Roulette.Service.Interface;
 
 namespace Roulette.Service
 {

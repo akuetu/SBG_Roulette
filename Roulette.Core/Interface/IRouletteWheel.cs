@@ -1,4 +1,4 @@
-﻿namespace Roulette.Core.Interface
+﻿namespace Roulette.Service.Interface
 {
     public interface IRouletteWheel
     {

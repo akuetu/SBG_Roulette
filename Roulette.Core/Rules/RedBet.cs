@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Roulette.Core.Interface;
 using Roulette.Core.Validations;
 using Roulette.Service.Base;
 using Roulette.Service.Interface;

@@ -1,8 +1,8 @@
 ﻿using Moq;
 using Roulette.Core;
-using Roulette.Core.Interface;
 using Roulette.Service;
 using Roulette.Service.Base;
+using Roulette.Service.Interface;
 using Roulette.Service.Model;
 using Roulette.Service.Shared;
 using Xunit;
