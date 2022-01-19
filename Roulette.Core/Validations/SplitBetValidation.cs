@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using Roulette.Service.Base;
+using Roulette.Service.Model;
 using Roulette.Service.Shared;
 
 namespace Roulette.Service.Validations

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Roulette.Service.Base;
 using Roulette.Service.Extensions;
+using Roulette.Service.Model;
 
 namespace Roulette.Service.Validations
 {

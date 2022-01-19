@@ -1,6 +1,7 @@
-﻿using Roulette.Service.Shared;
+﻿using Roulette.Service.Base;
+using Roulette.Service.Shared;
 
-namespace Roulette.Service.Base
+namespace Roulette.Service.Model
 {
     public class Board
     {

@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Roulette.Service.Base;
+using Roulette.Service.Model;
 using Roulette.Service.Shared;
 using Xunit;
 
