@@ -4,7 +4,7 @@ using Roulette.Service.Base;
 using Roulette.Service.Shared;
 using Xunit;
 
-namespace Roulette.Tests
+namespace Roulette.Tests.Service
 {
     public class BoardTests
     {

@@ -1,8 +1,8 @@
-﻿using Roulette.Core.Validations;
-using Roulette.Service.Base;
+﻿using Roulette.Service.Base;
 using Roulette.Service.Exceptions;
 using Roulette.Service.Interface;
 using Roulette.Service.Model;
+using Roulette.Service.Validations;
 
 namespace Roulette.Service.Rules
 {

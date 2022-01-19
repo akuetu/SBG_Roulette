@@ -3,7 +3,7 @@ using System.Linq;
 using Roulette.Service.Base;
 using Roulette.Service.Shared;
 
-namespace Roulette.Core.Validations
+namespace Roulette.Service.Validations
 {
     public static class SplitBetValidation
     {

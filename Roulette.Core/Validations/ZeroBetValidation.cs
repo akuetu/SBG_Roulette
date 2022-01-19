@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Roulette.Core.Validations
+namespace Roulette.Service.Validations
 {
     public static class ZeroBetValidation
     {

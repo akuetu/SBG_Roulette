@@ -1,5 +1,4 @@
 ﻿using Moq;
-using Roulette.Core;
 using Roulette.Service;
 using Roulette.Service.Base;
 using Roulette.Service.Interface;
@@ -7,7 +6,7 @@ using Roulette.Service.Model;
 using Roulette.Service.Shared;
 using Xunit;
 
-namespace Roulette.Tests
+namespace Roulette.Tests.Service
 {
     public class RedBetTests
     {

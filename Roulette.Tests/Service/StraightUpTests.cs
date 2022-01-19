@@ -7,7 +7,7 @@ using Roulette.Service.Model;
 using Roulette.Service.Shared;
 using Xunit;
 
-namespace Roulette.Tests
+namespace Roulette.Tests.Service
 {
     public class StraightUpTests
     {

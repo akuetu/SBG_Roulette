@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Roulette.Core.Validations
+namespace Roulette.Service.Validations
 {
     public static class FirstSecondAndThirdColumnBetValidation
     {
