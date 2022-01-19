@@ -1,7 +1,7 @@
 ﻿using System;
 using Roulette.Service.Interface;
 
-namespace Roulette.Service
+namespace Roulette.Service.Services
 {
     public class RouletteWheel : IRouletteWheel
     {

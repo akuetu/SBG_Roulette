@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Roulette.Service;
 using Roulette.Service.Base;
 using Roulette.Service.Model;
+using Roulette.Service.Services;
 using Roulette.Service.Shared;
 using Xunit;
 
