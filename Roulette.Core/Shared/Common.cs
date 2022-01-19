@@ -78,6 +78,5 @@ namespace Roulette.Service.Shared
 
             return list;
         }
-
     }
 }
