@@ -1,7 +1,7 @@
 ﻿using Roulette.Core.Base;
 using Roulette.Core.Model;
 
-namespace Roulette.API.Services
+namespace Roulette.Service.Services
 {
     public interface IRouletteService
     {

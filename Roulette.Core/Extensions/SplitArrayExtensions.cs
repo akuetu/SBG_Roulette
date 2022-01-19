@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace Roulette.Core.Extensions
+namespace Roulette.Service.Extensions
 {
     public static class SplitArrayExtensions
     {

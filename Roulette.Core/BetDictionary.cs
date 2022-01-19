@@ -4,7 +4,7 @@ using Roulette.Core.Interface;
 using Roulette.Core.Model;
 using Roulette.Core.Rules;
 
-namespace Roulette.Core
+namespace Roulette.Service
 {
     public static class BetDictionary
     {

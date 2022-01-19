@@ -1,9 +1,8 @@
-﻿using Roulette.API.Services;
-using Roulette.Core;
+﻿using Roulette.Core;
 using Roulette.Core.Base;
 using Roulette.Core.Model;
 
-namespace Roulette.Service.Service
+namespace Roulette.Service.Services
 {
     public class RouletteService: IRouletteService
     {

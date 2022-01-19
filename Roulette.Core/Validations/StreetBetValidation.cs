@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using Roulette.Core.Base;
-using Roulette.Core.Extensions;
+using Roulette.Service.Extensions;
 
 namespace Roulette.Core.Validations
 {

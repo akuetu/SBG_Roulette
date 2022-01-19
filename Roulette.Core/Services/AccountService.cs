@@ -1,6 +1,6 @@
 ﻿using Roulette.Core.Model;
 
-namespace Roulette.API.Services
+namespace Roulette.Service.Services
 {
     /// <summary>
     /// Auxiliary class that simulates player balance management

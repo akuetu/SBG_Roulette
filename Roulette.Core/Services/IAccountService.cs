@@ -1,4 +1,4 @@
-﻿namespace Roulette.API.Services
+﻿namespace Roulette.Service.Services
 {
     public interface IAccountService
     {

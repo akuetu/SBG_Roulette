@@ -1,6 +1,5 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using Roulette.API.Services;
-using Roulette.Service.Service;
+using Roulette.Service.Services;
 
 namespace Roulette.Service.Extensions
 {

@@ -5,6 +5,7 @@ using Roulette.Core;
 using Roulette.Core.Base;
 using Roulette.Core.Interface;
 using Roulette.Core.Model;
+using Roulette.Service;
 using Xunit;
 
 namespace Roulette.Tests

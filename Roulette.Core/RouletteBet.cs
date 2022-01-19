@@ -2,7 +2,7 @@
 using Roulette.Core.Base;
 using Roulette.Core.Model;
 
-namespace Roulette.Core
+namespace Roulette.Service
 {
     public class RouletteBet
     {
