@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using Roulette.Core.Base;
 using Roulette.Core.Interface;
-using Roulette.Core.Model;
 using Roulette.Core.Rules;
+using Roulette.Service.Model;
 
 namespace Roulette.Service
 {

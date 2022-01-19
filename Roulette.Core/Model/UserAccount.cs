@@ -1,4 +1,4 @@
-﻿namespace Roulette.Core.Model
+﻿namespace Roulette.Service.Model
 {
     public class UserAccount
     {

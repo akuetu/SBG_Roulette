@@ -1,6 +1,6 @@
 ﻿using Roulette.Core.Base;
 
-namespace Roulette.Core.Model
+namespace Roulette.Service.Model
 {
    public class BetResponse
     {

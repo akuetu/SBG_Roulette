@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Roulette.Core.Model
+namespace Roulette.Service.Model
 {
     /// <summary>
     /// Auxiliary class that simulates player balance management

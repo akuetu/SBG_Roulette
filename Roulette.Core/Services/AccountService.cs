@@ -1,4 +1,4 @@
-﻿using Roulette.Core.Model;
+﻿using Roulette.Service.Model;
 
 namespace Roulette.Service.Services
 {
