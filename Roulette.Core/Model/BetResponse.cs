@@ -1,6 +1,6 @@
-﻿using Roulette.Service.Shared;
+﻿ using Roulette.Service.Shared;
 
-namespace Roulette.Service.Model
+ namespace Roulette.Service.Model
 {
     public class BetResponse
     {
