@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Roulette.Core.Exceptions
+namespace Roulette.Service.Exceptions
 {
     [Serializable]
     public class RowInvalidException : Exception

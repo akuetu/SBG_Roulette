@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using Roulette.Core.Model;
+﻿using Roulette.Core.Model;
 
 namespace Roulette.API.Services
 {

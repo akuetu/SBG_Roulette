@@ -1,6 +1,6 @@
 ﻿using System.Linq;
 
-namespace Roulette.Core.Base
+namespace Roulette.Service.Base
 {
     public class BaseBet
     {

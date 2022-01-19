@@ -1,10 +1,9 @@
 ﻿using System;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Roulette.API.Model;
 using Roulette.API.Services;
-using Roulette.Core.Exceptions;
 using Roulette.Core.Model;
+using Roulette.Service.Exceptions;
 
 namespace Roulette.API.Controllers
 {

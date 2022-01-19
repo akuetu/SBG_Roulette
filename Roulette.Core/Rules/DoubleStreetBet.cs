@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Roulette.Core.Base;
-using Roulette.Core.Exceptions;
 using Roulette.Core.Interface;
 using Roulette.Core.Model;
 using Roulette.Core.Validations;
+using Roulette.Service.Base;
+using Roulette.Service.Exceptions;
 
 namespace Roulette.Core.Rules
 {
