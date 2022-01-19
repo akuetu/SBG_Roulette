@@ -5,6 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using Roulette.API.Services;
+using Roulette.Service.Extensions;
 
 namespace Roulette.API
 {
@@ -19,13 +20,9 @@ namespace Roulette.API
 
         public void ConfigureServices(IServiceCollection services)
         {
-
             services.AddControllers();
             services.AddMvc().AddNewtonsoftJson();
-            services.AddTransient<IRouletteService, RouletteService>();
-            services.AddTransient<IAccountService, AccountService>();
-
-
+            services.AddRouletteServiceCollection();
 
             services.AddSwaggerGen(c =>
             {
