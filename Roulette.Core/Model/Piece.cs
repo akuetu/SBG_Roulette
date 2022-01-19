@@ -1,6 +1,6 @@
 ﻿using Roulette.Service.Shared;
 
-namespace Roulette.Service.Base
+namespace Roulette.Service.Model
 {
     public class Piece
     {

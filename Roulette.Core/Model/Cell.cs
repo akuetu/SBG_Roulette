@@ -1,4 +1,4 @@
-﻿namespace Roulette.Service.Base
+﻿namespace Roulette.Service.Model
 {
     public class Cell
     {
