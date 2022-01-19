@@ -5,7 +5,7 @@ using Roulette.Core.Interface;
 using Roulette.Core.Model;
 using Xunit;
 
-namespace Roulette.Tests
+namespace Roulette.Tests.Service
 {
     public class BlackBetTests
     {
