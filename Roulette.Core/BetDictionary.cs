@@ -2,6 +2,7 @@
 using Roulette.Core.Interface;
 using Roulette.Core.Rules;
 using Roulette.Service.Base;
+using Roulette.Service.Interface;
 using Roulette.Service.Model;
 using Roulette.Service.Shared;
 

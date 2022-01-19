@@ -7,6 +7,7 @@ using Roulette.Core.Interface;
 using Roulette.Core.Validations;
 using Roulette.Service.Base;
 using Roulette.Service.Exceptions;
+using Roulette.Service.Interface;
 using Roulette.Service.Model;
 
 namespace Roulette.Core.Rules

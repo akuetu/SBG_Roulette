@@ -1,4 +1,5 @@
 ﻿using Roulette.Core.Interface;
+using Roulette.Service.Interface;
 using Roulette.Service.Model;
 
 namespace Roulette.Core.Rules

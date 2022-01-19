@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Roulette.Core.Interface;
 using Roulette.Core.Validations;
 using Roulette.Service.Base;
+using Roulette.Service.Interface;
 using Roulette.Service.Model;
 using Roulette.Service.Shared;
 
