@@ -1,6 +1,4 @@
-﻿using Roulette.Core.Base;
-
-namespace Roulette.Service.Base
+﻿namespace Roulette.Service.Base
 {
     public class Cell
     {

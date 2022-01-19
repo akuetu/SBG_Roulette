@@ -2,7 +2,6 @@
 using System.Linq;
 using Moq;
 using Roulette.Core;
-using Roulette.Core.Base;
 using Roulette.Core.Interface;
 using Roulette.Service;
 using Roulette.Service.Base;

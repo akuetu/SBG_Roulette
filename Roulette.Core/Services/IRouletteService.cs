@@ -1,5 +1,4 @@
-﻿using Roulette.Core.Base;
-using Roulette.Service.Base;
+﻿using Roulette.Service.Base;
 using Roulette.Service.Model;
 using Roulette.Service.Shared;
 

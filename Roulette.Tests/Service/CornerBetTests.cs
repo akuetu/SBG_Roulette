@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using Moq;
 using Roulette.Core;
-using Roulette.Core.Base;
 using Roulette.Core.Interface;
 using Roulette.Service;
 using Roulette.Service.Base;

@@ -1,8 +1,6 @@
-﻿ 
-using Roulette.Service.Base;
-using Roulette.Service.Shared;
+﻿using Roulette.Service.Shared;
 
-namespace Roulette.Core.Base
+namespace Roulette.Service.Base
 {
     public class Piece
     {
