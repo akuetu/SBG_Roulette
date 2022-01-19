@@ -5,9 +5,34 @@ VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Roulette.Tests", "Roulette.Tests\Roulette.Tests.csproj", "{94803890-5D2A-4FA1-A9B9-42E11AB73915}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Roulette.Core", "Roulette.Core\Roulette.Core.csproj", "{C6645567-412F-45FA-8477-0EF922E9E856}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Roulette.Domain", "Roulette.Core\Roulette.Domain.csproj", "{C6645567-412F-45FA-8477-0EF922E9E856}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Roulette.API", "Roulette.API\Roulette.API.csproj", "{B6CF2BBB-48D1-47E8-B639-5D555E3768A7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{A4FA5EA6-D0E7-4C24-BE63-B921A6B0DC43}"
+	ProjectSection(SolutionItems) = preProject
+		Roulette.API\Postman\SBG.postman_collection.json = Roulette.API\Postman\SBG.postman_collection.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{5FC57AE3-E115-4EC5-A68B-A4F7ED95D606}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{B259E3AB-F22D-4A82-B16A-464D79435EFA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{6405F57F-BF05-4912-8240-6961831C4A88}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{FAA4EDF4-C479-4A6D-B345-D8A0F2BB17BB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{CA18065F-44AB-468F-9B0A-A0DDF2944239}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{4D783BCA-6DE0-48F7-A934-CDA3941FFCDB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Postman", "Postman", "{829FE8DF-EA36-455F-8473-32DE440165F4}"
+	ProjectSection(SolutionItems) = preProject
+		Roulette.API\Postman\SBG.postman_collection.json = Roulette.API\Postman\SBG.postman_collection.json
+		..\..\..\..\DEV\Roulette\SBG\Roulette.API\Postman\SBG.postman_collection.json = ..\..\..\..\DEV\Roulette\SBG\Roulette.API\Postman\SBG.postman_collection.json
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roulette.Service", "Roulette.Service\Roulette.Service.csproj", "{7EBD3156-FCB8-4404-8A8E-621B5B9F4E46}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,9 +52,25 @@ Global
 		{B6CF2BBB-48D1-47E8-B639-5D555E3768A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B6CF2BBB-48D1-47E8-B639-5D555E3768A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B6CF2BBB-48D1-47E8-B639-5D555E3768A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EBD3156-FCB8-4404-8A8E-621B5B9F4E46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EBD3156-FCB8-4404-8A8E-621B5B9F4E46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EBD3156-FCB8-4404-8A8E-621B5B9F4E46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EBD3156-FCB8-4404-8A8E-621B5B9F4E46}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{94803890-5D2A-4FA1-A9B9-42E11AB73915} = {CA18065F-44AB-468F-9B0A-A0DDF2944239}
+		{C6645567-412F-45FA-8477-0EF922E9E856} = {B259E3AB-F22D-4A82-B16A-464D79435EFA}
+		{B6CF2BBB-48D1-47E8-B639-5D555E3768A7} = {5FC57AE3-E115-4EC5-A68B-A4F7ED95D606}
+		{5FC57AE3-E115-4EC5-A68B-A4F7ED95D606} = {4D783BCA-6DE0-48F7-A934-CDA3941FFCDB}
+		{B259E3AB-F22D-4A82-B16A-464D79435EFA} = {4D783BCA-6DE0-48F7-A934-CDA3941FFCDB}
+		{6405F57F-BF05-4912-8240-6961831C4A88} = {4D783BCA-6DE0-48F7-A934-CDA3941FFCDB}
+		{FAA4EDF4-C479-4A6D-B345-D8A0F2BB17BB} = {4D783BCA-6DE0-48F7-A934-CDA3941FFCDB}
+		{CA18065F-44AB-468F-9B0A-A0DDF2944239} = {4D783BCA-6DE0-48F7-A934-CDA3941FFCDB}
+		{829FE8DF-EA36-455F-8473-32DE440165F4} = {A4FA5EA6-D0E7-4C24-BE63-B921A6B0DC43}
+		{7EBD3156-FCB8-4404-8A8E-621B5B9F4E46} = {6405F57F-BF05-4912-8240-6961831C4A88}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DAD8A607-C787-4478-8F79-0032F91758A3}

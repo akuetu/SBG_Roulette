@@ -21,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Roulette.Core\Roulette.Core.csproj" />
+    <ProjectReference Include="..\Roulette.Core\Roulette.Domain.csproj" />
   </ItemGroup>
 
 </Project>
