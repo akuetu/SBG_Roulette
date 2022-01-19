@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Roulette.Service.Model;
 
-namespace Roulette.Service.Model
+namespace Roulette.Service.Services
 {
     /// <summary>
     /// Auxiliary class that simulates player balance management
@@ -11,7 +12,7 @@ namespace Roulette.Service.Model
     {
         private static Object thisLock = new Object();
         private static List<decimal> DbBalance = new List<decimal>();
-
+       public  UserAccount UserAccount { get; set; }
 
         public void AddMoney(decimal quantity)
         {
