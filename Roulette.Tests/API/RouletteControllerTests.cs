@@ -1,15 +1,11 @@
-﻿using System.Linq;
-using System.Text.Json;
+﻿using System;
 using Microsoft.AspNetCore.Mvc;
-using Moq;
 using Roulette.API.Controllers;
 using Roulette.API.Model;
-using Roulette.Service.Interface;
-using Roulette.Service.Model;
+using Roulette.Domain.Entities;
 using Roulette.Service.Services;
 using Roulette.Service.Shared;
 using Xunit;
-using Xunit.Sdk;
 
 namespace Roulette.Tests.API
 {
@@ -30,7 +26,8 @@ namespace Roulette.Tests.API
                 Bets = {},
                 Account = new Account()
                 {
-                    UserAccount = new UserAccount(){Id = 1, Name = "Jane Doe"}
+                    UserAccount = new UserAccount(){Id = 1, Name = "Jane Doe"},
+                    Game = new Game(){ Id = 1, Session = Guid.Parse("ea5b1378-3a8b-44b9-8de4-4f73f92a63f0") }
                 }
             };
 

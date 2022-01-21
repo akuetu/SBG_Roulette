@@ -1,4 +1,5 @@
-﻿ using Roulette.Service.Shared;
+﻿ using Roulette.Domain.Entities;
+ using Roulette.Service.Shared;
 
  namespace Roulette.Service.Model
 {
@@ -17,5 +18,7 @@
         public TypeOfBet TypeOfBet { get; set; }
 
         public UserAccount UserAccount { get; set; }
+
+        public Game Game { get; set; }
     }
 }

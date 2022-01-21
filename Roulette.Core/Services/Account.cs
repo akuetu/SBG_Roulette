@@ -1,7 +1,8 @@
-﻿using System;
+﻿using Roulette.Domain.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using Roulette.Service.Model;
+ 
 
 namespace Roulette.Service.Services
 {
@@ -13,6 +14,7 @@ namespace Roulette.Service.Services
         private static Object thisLock = new Object();
         private static List<decimal> DbBalance = new List<decimal>();
        public  UserAccount UserAccount { get; set; }
+       public Game Game { get; set; } 
 
         public void AddMoney(decimal quantity)
         {

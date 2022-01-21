@@ -24,6 +24,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Postman", "Postman", "{829F
 		Roulette.API\Postman\SBG.postman_collection.json = Roulette.API\Postman\SBG.postman_collection.json
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{13C45AE3-DBE1-49E5-8222-F02CE911B9D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roulette.Domain", "Rolette.Domain\Roulette.Domain.csproj", "{5ADE49C8-7F46-4C24-9C81-60CE8BFF5BDE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,6 +46,10 @@ Global
 		{B6CF2BBB-48D1-47E8-B639-5D555E3768A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B6CF2BBB-48D1-47E8-B639-5D555E3768A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B6CF2BBB-48D1-47E8-B639-5D555E3768A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5ADE49C8-7F46-4C24-9C81-60CE8BFF5BDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5ADE49C8-7F46-4C24-9C81-60CE8BFF5BDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5ADE49C8-7F46-4C24-9C81-60CE8BFF5BDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5ADE49C8-7F46-4C24-9C81-60CE8BFF5BDE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -54,6 +62,8 @@ Global
 		{B259E3AB-F22D-4A82-B16A-464D79435EFA} = {4D783BCA-6DE0-48F7-A934-CDA3941FFCDB}
 		{CA18065F-44AB-468F-9B0A-A0DDF2944239} = {4D783BCA-6DE0-48F7-A934-CDA3941FFCDB}
 		{829FE8DF-EA36-455F-8473-32DE440165F4} = {A4FA5EA6-D0E7-4C24-BE63-B921A6B0DC43}
+		{13C45AE3-DBE1-49E5-8222-F02CE911B9D3} = {4D783BCA-6DE0-48F7-A934-CDA3941FFCDB}
+		{5ADE49C8-7F46-4C24-9C81-60CE8BFF5BDE} = {13C45AE3-DBE1-49E5-8222-F02CE911B9D3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DAD8A607-C787-4478-8F79-0032F91758A3}
