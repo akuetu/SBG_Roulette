@@ -32,10 +32,10 @@ namespace Roulette.Service.Rules
                 row02[1] = _betModel.Board.Grid[i + 1, 1].Piece.Number;
 
                 var mergeFirstGroupArray = row01.Concat(row02).ToArray();
-                if (Enumerable.SequenceEqual(_betModel.Bets.OrderBy(e => e), mergeFirstGroupArray.OrderBy(e => e)))
-                {
-                    return BaseBet.IsCorrectBet(_betModel.WheelNumber, _betModel.Bets);
-                }
+
+                var firstResult =  IsTheBetCorrect(mergeFirstGroupArray);
+
+                if (firstResult) return BaseBet.IsCorrectBet(_betModel.WheelNumber, _betModel.Bets); 
 
                 //second group
                 row03[0] = _betModel.Board.Grid[i, 1].Piece.Number;
@@ -46,13 +46,17 @@ namespace Roulette.Service.Rules
 
                 var mergeSecondGroupArray = row03.Concat(row04).ToArray();
 
-                if (Enumerable.SequenceEqual(_betModel.Bets.OrderBy(e => e), mergeSecondGroupArray.OrderBy(e => e)))
-                {
-                    return BaseBet.IsCorrectBet(_betModel.WheelNumber, _betModel.Bets);
-                }
+                var secondResult = IsTheBetCorrect(mergeSecondGroupArray);
+
+                if (secondResult) return BaseBet.IsCorrectBet(_betModel.WheelNumber, _betModel.Bets);
             }
 
             return false;
+        }
+
+        private bool IsTheBetCorrect(int[] mergedGroupArray)
+        {
+            return Enumerable.SequenceEqual(_betModel.Bets.OrderBy(e => e), mergedGroupArray.OrderBy(e => e));
         }
     }
 }

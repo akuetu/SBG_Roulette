@@ -1,7 +1,5 @@
 ﻿using System.Collections.Generic;
 using Moq;
-using Roulette.Service;
-using Roulette.Service.Base;
 using Roulette.Service.Interface;
 using Roulette.Service.Model;
 using Roulette.Service.Services;
